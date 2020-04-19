@@ -1,0 +1,98 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    font-family:"Microsoft YaHei";
+    color:#666;
+    background:#333;
+}
+
+a{
+    text-decoration:none;
+}
+
+a:link,a:visited{
+    color:#5e5e5e;
+}
+
+.main{
+    width:1200px;
+    height:510px;
+    margin:30px auto;
+    overflow:hidden;
+    position:relative;
+}
+
+/* 焦点图架子 */
+.banner{
+    width:1200px;
+    height:460px;
+    overflow:hidden;
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+
+/* 焦点图通用样式 */
+.banner-slide{
+    width:1200px;
+    height:460px;
+    float:left;
+    background-repeat:no-repeat;
+    overflow:hidden;
+    display:none;
+}
+
+.slide-active{
+    display:block;
+}
+
+/* 焦点图图片 */
+.slide1{
+    background:url(../img/1.jpg);
+}
+
+.slide2{
+    background:url(../img/3.jpg);
+}
+
+.slide3{
+    background:url(../img/4.jpg);
+}
+
+.slide4{
+    background:url(../img/5.jpg);
+}
+
+/* 选项卡 */
+.option-box{
+    position:absolute;
+    left:0;
+    top:0;
+    width:1200px;
+    height:50px;
+    background:#fff;
+    z-index:1;
+    border-radius:10px 10px 0 0;
+    font-size:0;                     
+}
+/* font-size清除inline-block换行问题 */
+
+.option-box span{
+    display:inline-block;
+    width:300px;
+    height:50px;
+    text-align:center;
+    line-height:50px;
+    font-size:22px;
+    cursor:pointer;
+    border-radius:10px 10px 0 0;
+    letter-spacing:8px;
+}
+
+.option-box span.active{
+    background:#FFCC00;
+    font-weight:bold;
+}
